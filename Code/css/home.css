@@ -1,0 +1,74 @@
+* {
+    font-family: 'Oswald', 'sans-serif';
+    box-sizing: border-box; 
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-areas:
+    "cabecalho"
+    "menu"
+    "principal"
+    "rodape";
+}
+
+.cabecalho {
+
+    grid-area: cabecalho;
+    background-color: #808080;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.cabecalho > h1 {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.cabecalho > h2 {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #a9a9a9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.menu > h1 {
+    justify-content: flex-start;
+    margin: 0px;
+    font-weight: 550;
+    font-size: 1rem;
+}
+
+.principal {
+    grid-area: principal;
+    height: calc(100vh - 180px);
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #a9a9a9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 350;
+}
